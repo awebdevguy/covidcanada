@@ -66,11 +66,11 @@ body {
 }
 
 #new-deaths {
-  width: 250px;
+  width: 25vw;
 }
 
 #total-deaths {
-  width: 600px;
+  width: 50vw;
 }
 
 #new-deaths, #total-deaths {
@@ -166,13 +166,13 @@ body {
   color: red;
 }
 
-#acknowledge {
-  font-size: .7rem;
-  margin: 3rem auto;
-  padding: 1rem;
+#acknowledge p {
+  font-size: .5rem;
+  /* margin: 3rem auto; */
+  /* padding: 1rem; */
   text-align: center;
-  background-color: lightgrey;
-  border: solid 2px black;
+  /* background-color: lightgrey; */
+  /* border: solid 2px black; */
 }
 
 footer a {
@@ -180,19 +180,19 @@ footer a {
 }
 
 footer h6{
-  line-height: 2em;
-  font-size: 1rem;
+  /* line-height: 1em; */
+  font-size: .7rem;
   position: static;
   bottom: 0;
   margin-left: 0;
   left: 0;
-  height: 2rem;
+  height: 1rem;
   width: auto;
   background-color: black;
-  margin-top: 2rem;
+  margin-top: 0;
   margin-bottom: 0;
   text-align: center;
-  padding: 1rem;
+  padding: .5rem 2rem;
 }
 
 mark.red {
@@ -214,7 +214,7 @@ mark.green {
   float: right;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 600px) {
 
   #search-container, #deaths-container {
     display: block;
