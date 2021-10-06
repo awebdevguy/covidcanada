@@ -24,8 +24,8 @@ const totalDistributed = document.getElementById("total-distributed");
 const newRecovered = document.getElementById("new-recovered");
 const totalRecovered = document.getElementById("total-recovered");
 
-// const proxyURL = "https://quicors.herokuapp.com/";
-const proxyURL = '';
+const proxyURL = "https://quicors.herokuapp.com/";
+// const proxyURL = '';
 
 const provincesURL =  proxyURL + "https://api.opencovid.ca/other?stat=prov";
 const healthRegionsURL = proxyURL + "https://api.opencovid.ca/other?stat=hr";
