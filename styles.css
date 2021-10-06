@@ -66,11 +66,11 @@ body {
 }
 
 #new-deaths {
-  width: 25vw;
+  width: 15vw;
 }
 
 #total-deaths {
-  width: 50vw;
+  width: 40vw;
 }
 
 #new-deaths, #total-deaths {
@@ -167,7 +167,7 @@ body {
 }
 
 #acknowledge p {
-  font-size: .5rem;
+  font-size: .7rem;
   /* margin: 3rem auto; */
   /* padding: 1rem; */
   text-align: center;
