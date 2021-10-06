@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Summary for Canada's covid statistics such as daily death, cases and vaccines and also total death, completely vaccinated and the recovered.">
+  <meta name="keywords" content="canada covid, covid deaths, daily covid deaths, covid cases, completely vaccinated, covid recovered, vaccine administered, vaccine distributed">
+  <title>Covid Canada</title>
+  <link rel="icon" href="./favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="header">
+    <div id="header-date"></div>
+    <div id="header-prov"></div>
+    <div id="header-region"></div>
+  </div>
+  <div class="section" id="main-container">
+    <h1 id="title">CANADA'S COVID NUMBERS</h1>
+    <!-- <br> -->
+    <div id="search-container">
+      <div class="data-group" id="date-container">
+        <label class="search-label" for="date">Date:</label>
+        <output class="search-output" id="date"></output>
+      </div class="data-group" id="province-container">
+      
+      <div class="data-group" id="province-container">
+        <label class="search-label" for="prov-dropdown">Province:</label>
+        <select class="search-output" id="prov-dropdown" name="province" onchange="getProvince(this.value)">
+        </select>
+      </div>
+      
+      <div class="data-group" id="region-container">
+        <label class="search-label" for="region">Region:</label>
+        <select class="search-output" id="region-dropdown" name="region" onchange="getRegion(this.value)">
+        </select>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div id="deaths-container">
+      <div class="data-group death-group" id="new-deaths-container">
+        <label class="death-label" id="new-death-label" for="new-deaths">Deaths(today):</label>
+        <div id="new-deaths">Output</div>
+      </div>
+
+      <div class="data-group death-group" id="total-deaths-container">
+        <label class="death-label" for="total-deaths">Total Deaths:</label>
+        <div id="total-deaths"></div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="section" id="supp-container">
+      <div class="supp-group" id="case-group">
+        <div class="data-label-container" id="new-cases-container">
+          <label class="case-label supp-label" for="new-case">New Cases: </label>
+          <div class="supp-output" id="new-case">5</div>
+        </div>
+
+        <div class="data-label-container"  id="active-cases-container">
+          <label class="case-label supp-label" for="active-case">Active Cases: </label>
+          <div class="supp-output" id="active-case">465546</div>
+        </div>
+
+        <div class="data-label-container"  id="total-cases-container">
+          <label class="case-label supp-label" for="total-case">Total Cases: </label>
+          <div class="supp-output" id="total-case">4654654</div>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="supp-group"  id="vaccine-group">
+        <div class="data-label-container"  id="new-vaccine-container">
+          <label class="vaccine-label supp-label" for="new-vaccine">Newly Vaccinated: </label>
+          <div class="supp-output" id="new-vaccine">4566</div>
+        </div>
+
+        <div class="data-label-container"  id="completed-vaccine-container">
+          <label class="vaccine-label supp-label" for="completed-vaccine">Completely Vaccinated: </label>
+          <div class="supp-output" id="completed-vaccine">26565454</div>
+        </div>
+
+        <div class="data-label-container"  id="administered-container">
+          <label class="vaccine-label supp-label" for="total-administered">Total Vaccines Administered: </label>
+          <div class="supp-output" id="total-administered">16546544</div>
+        </div>
+
+        <div class="data-label-container"  id="distributed-container">
+          <label class="vaccine-label supp-label" for="total-distributed">Total Vaccines Distributed: </label>
+          <div class="supp-output" id="total-distributed">76465465</div>
+        </div>
+      </div>
+
+      <br>
+
+      <div  class="supp-group"  id="recovered-group">
+        <div class="data-label-container" id="new-recovered-container">
+          <label class="recovered-label supp-label" for="new-recovered">Newly Recovered: </label>
+          <div class="supp-output" id="new-recovered">4656</div>
+        </div>
+
+        <div class="data-label-container"  id="total-recovered-container">
+          <label class="vaccine-label supp-label" for="total-recovered">Total Recovered: </label>
+          <div class="supp-output" id="total-recovered">46463131</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div id="acknowledge">
+        <h3>Acknowledgement</h3>
+        <p>Data for this web app is accessed through the Covid-19 Canada Open Data Working Group(<a href="https://opencovid.ca/">CCODWG</a>)  api.</p>
+      </div>
+    </div>
+
+    <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Tip for a Ko-fi', 'teal', 'T6T56H127');kofiwidget2.draw();</script>     
+   
+  </div>
+
+  <footer><h6 id="footer"><mark class="green">&lt;</mark><mark class="red">awebdevguy</mark><mark class="green">&gt;</mark><mark class="white">&copy 2021 LCQ</mark><mark class="green">&lt;/</mark><mark class="red">awebdevguy</mark><mark class="green">&gt;</mark><mark id="version" class="white">v0.1</mark></h6></footer>
+
+  <!-- <footer><h6 id="footer"><a id="footer-link" target="_blank" href="https://github.com/awebdevguy"><mark class="green">&lt;</mark><mark class="red">awebdevguy</mark><mark class="green">&gt;</mark><mark class="white">&copy 2021 LCQ</mark><mark class="green">&lt;/</mark><mark class="red">awebdevguy</mark><mark class="green">&gt;</mark></a><mark id="version" class="white">v1.0</mark></h6></footer> -->
+
+  <script src="./main.js"></script>
+</body>
+</html>

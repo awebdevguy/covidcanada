@@ -1,0 +1,291 @@
+body {
+  box-sizing: border-box;
+  font-family: Nunito, Helvetica, sans-serif;
+  background-color: beige;
+  margin: auto;
+  width:100vw;
+}
+
+#header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+   'header-date header-prov header-region';
+  height: 3rem;
+  background-color:black;
+  color: whitesmoke;
+  width: auto;
+  align-items: center;
+  justify-items: center;
+  position: sticky;
+  top: 0;
+  padding: 8px;
+}
+
+#header-date {
+  grid-area: header-date;
+}
+
+#header-prov {
+  grid-area: header-prov;
+}
+
+#header-region {
+  grid-area: header-region;
+}
+
+#main-container {
+  max-width: 1200px;
+  height: auto;
+  margin: auto;
+  padding: 1rem;
+}
+
+#title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+#search-container, #prov-dropdown, #region-dropdown {
+  font-size: 1.2rem;
+}
+
+.search-output {
+  color: rgb(22, 22, 170);
+}
+
+#search-container, #deaths-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.death-label {
+  font-size: 1.5rem;
+}
+
+#new-deaths {
+  width: 250px;
+}
+
+#total-deaths {
+  width: 600px;
+}
+
+#new-deaths, #total-deaths {
+  padding: 1rem;
+  font-size: 3rem;
+  text-align: center;
+  color: red;
+  background-color: black;
+}
+
+#supp-container {
+  padding: 1rem;
+  grid-template-areas: 
+    'case-group'
+    'vaccine-group'
+    'recovered-group';
+  background-color: black;
+}
+
+.supp-group {
+  background-color: blanchedalmond;
+}
+
+#case-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+   'new-cases-container active-cases-container total-cases-container';
+  grid-area: case-group;
+}
+
+#new-cases-container {
+  grid-area: new-cases-container;
+}
+
+#active-cases-container {
+  grid-area: active-cases-container;
+}
+
+#total-cases-container {
+  grid-area: total-cases-container;
+}
+
+#vaccine-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  'new-vaccine-container completed-vaccine-container' 'administered-container distributed-container';
+  grid-area: vaccine-group;
+}
+
+#new-vaccine-container {
+  grid-area: new-vaccine-container;
+}
+
+#completed-vaccine-container {
+  grid-area: completed-vaccine-container;
+}
+
+#administered-container {
+  grid-area: administered-container;
+}
+
+#distributed-container {
+  grid-area: distributed-container;
+}
+
+#recovered-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  'new-recovered-container total-recovered-container';
+  grid-area: recovered-group;
+}
+
+#new-recovered-container {
+  grid-area: new-recovered-container;
+}
+
+#total-recovered-container {
+  grid-area: total-recovered-container;
+}
+
+.data-label-container {
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  grid-area: data-label-container;
+}
+
+.supp-output {
+  font-size: 1.5rem;
+  color: red;
+}
+
+#acknowledge {
+  font-size: .7rem;
+  margin: 3rem auto;
+  padding: 1rem;
+  text-align: center;
+  background-color: lightgrey;
+  border: solid 2px black;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer h6{
+  line-height: 2em;
+  font-size: 1rem;
+  position: static;
+  bottom: 0;
+  margin-left: 0;
+  left: 0;
+  height: 2rem;
+  width: auto;
+  background-color: black;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 1rem;
+}
+
+mark.red {
+  color:red;
+  background: none;
+}
+
+mark.white {
+  color:#fff;
+  background: none;
+}
+
+mark.green {
+  color: green;
+  background: none;
+}
+
+#version {
+  float: right;
+}
+
+@media screen and (max-width: 1200px) {
+
+  #search-container, #deaths-container {
+    display: block;
+    margin: 0;
+  }
+
+  .data-group {
+    padding: 1rem 0;
+  }
+
+  #new-deaths, #total-deaths {
+    width: auto;
+    font-size: 4rem;
+    text-align: center;
+    color: red;
+    background-color: black;
+  }
+
+  #supp-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+  }
+
+  .supp-group, #case-group, #vaccine-group, #recovered-group {
+    display: block;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+    grid-template-areas: 
+      'data-label-container'
+      'data-label-container';
+  }
+
+  .data-label-container {
+    max-width: 100%;
+  }
+
+  #footer {
+    width: auto;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  #main-container {
+    padding: 3px;
+  }
+
+  #supp-container {
+    padding: 4px;
+  }
+
+  #header {
+    position: sticky;
+    height: auto;
+    width: auto;
+    padding: 5px;
+  }
+
+  #prov-dropdown, #region-dropdown {
+    width: 280px;
+  }
+
+  #footer {
+    height: auto;
+    font-size: .8rem;
+    padding: auto;
+
+  }
+
+  #version {
+    display: none;
+  }
+}
