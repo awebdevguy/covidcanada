@@ -1,9 +1,13 @@
+html {
+  width: 100vw;
+}
+
 body {
   box-sizing: border-box;
   font-family: Nunito, Helvetica, sans-serif;
-  background-color: beige;
+  background-color: rgb(247, 247, 236);
   margin: auto;
-  width:100vw;
+  width:auto;
 }
 
 #header {
@@ -13,7 +17,7 @@ body {
    'header-date header-prov header-region';
   height: 3rem;
   background-color:black;
-  color: whitesmoke;
+  color: white;
   width: auto;
   align-items: center;
   justify-items: center;
@@ -49,10 +53,15 @@ body {
 
 #search-container, #prov-dropdown, #region-dropdown {
   font-size: 1.2rem;
+  max-width: 98vw;
 }
 
 .search-output {
-  color: rgb(22, 22, 170);
+  margin-top: 3px;
+  padding: 5px;
+  display: block;
+  border: solid 2px black;
+  background-color: rgb(253, 248, 238);
 }
 
 #search-container, #deaths-container {
@@ -91,7 +100,7 @@ body {
 }
 
 .supp-group {
-  background-color: blanchedalmond;
+  background-color: rgb(253, 248, 238);
 }
 
 #case-group {
@@ -168,11 +177,7 @@ body {
 
 #acknowledge p {
   font-size: .7rem;
-  /* margin: 3rem auto; */
-  /* padding: 1rem; */
   text-align: center;
-  /* background-color: lightgrey; */
-  /* border: solid 2px black; */
 }
 
 footer a {
@@ -180,7 +185,6 @@ footer a {
 }
 
 footer h6{
-  /* line-height: 1em; */
   font-size: .7rem;
   position: static;
   bottom: 0;
@@ -272,10 +276,6 @@ mark.green {
     height: auto;
     width: auto;
     padding: 5px;
-  }
-
-  #prov-dropdown, #region-dropdown {
-    width: 280px;
   }
 
   #footer {
