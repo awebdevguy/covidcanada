@@ -51,23 +51,30 @@ body {
   font-size: 3rem;
 }
 
-#search-container, #prov-dropdown, #region-dropdown {
+#date {
+  width: auto;
+  height: 1.4rem;
+  display: flex;
+  align-items: center;
+}
+
+#prov-dropdown, #region-dropdown {
   font-size: 1.2rem;
   max-width: 98vw;
 }
 
 .search-output {
-  margin-top: 3px;
+  margin: 0 0 1rem 0;
   padding: 5px;
   display: block;
   border: solid 2px black;
   background-color: rgb(253, 248, 238);
+  white-space: nowrap;
 }
 
 #search-container, #deaths-container {
   display: flex;
   justify-content: space-between;
-  margin: 0;
 }
 
 .death-label {
@@ -83,6 +90,7 @@ body {
 }
 
 #new-deaths, #total-deaths {
+  margin-bottom: 1rem;
   padding: 1rem;
   font-size: 3rem;
   text-align: center;
@@ -218,24 +226,22 @@ mark.green {
   float: right;
 }
 
-@media screen and (max-width: 600px) {
-
-  #search-container, #deaths-container {
-    display: block;
-    margin: 0;
-  }
-
-  .data-group {
-    padding: 1rem 0;
-  }
+@media screen and (max-width: 900px) {
 
   #new-deaths, #total-deaths {
     width: auto;
-    font-size: 4rem;
-    text-align: center;
-    color: red;
-    background-color: black;
   }
+
+  #search-container, #deaths-container {
+    display: block;
+  }
+
+  .search-output {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
 
   #supp-container {
     grid-template-columns: 1fr;
