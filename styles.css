@@ -5,7 +5,7 @@ html {
 body {
   box-sizing: border-box;
   font-family: Nunito, Helvetica, sans-serif;
-  background-color: rgb(247, 247, 236);
+  background-color: mintcream;
   margin: auto;
   width:auto;
 }
@@ -68,7 +68,7 @@ body {
   padding: 5px;
   display: block;
   border: solid 2px black;
-  background-color: rgb(253, 248, 238);
+  background-color: papayawhip;
   white-space: nowrap;
 }
 
@@ -108,7 +108,8 @@ body {
 }
 
 .supp-group {
-  background-color: rgb(253, 248, 238);
+  background-color:papayawhip
+  ;
 }
 
 #case-group {
