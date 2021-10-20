@@ -1,3 +1,8 @@
+:root{
+  --border: .25rem solid black;
+  --padding: .25rem;
+}
+
 html {
   width: 100vw;
 }
@@ -49,6 +54,10 @@ body {
   text-align: center;
   font-weight: 700;
   font-size: 3rem;
+  background-color: orangered;
+  padding: 1rem;
+  margin-top: 0;
+  border: var(--border);
 }
 
 #date {
@@ -67,9 +76,13 @@ body {
   margin: 0 0 1rem 0;
   padding: 5px;
   display: block;
-  border: solid 2px black;
-  background-color: papayawhip;
+  border: var(--border);
+  background-color: beige;
   white-space: nowrap;
+}
+
+.search-output:focus:hover {
+  outline: none;
 }
 
 #search-container, #deaths-container {
@@ -99,7 +112,7 @@ body {
 }
 
 #supp-container {
-  padding: 1rem;
+  padding: var(--padding);
   grid-template-areas: 
     'case-group'
     'vaccine-group'
@@ -108,7 +121,7 @@ body {
 }
 
 .supp-group {
-  background-color:papayawhip
+  background-color:beige
   ;
 }
 
@@ -275,14 +288,14 @@ mark.green {
   }
 
   #supp-container {
-    padding: 4px;
+    padding: var(--padding);
   }
 
   #header {
     position: sticky;
     height: auto;
     width: auto;
-    padding: 5px;
+    padding: var(--padding);
   }
 
   #footer {
