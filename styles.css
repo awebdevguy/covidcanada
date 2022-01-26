@@ -54,17 +54,17 @@ body {
   text-align: center;
   font-weight: 700;
   font-size: 3rem;
-  background-color: orangered;
+  background-color: red;
   padding: 1rem;
   margin-top: 0;
   border: var(--border);
 }
 
 #date {
-  width: auto;
+  /* width: auto; */
   line-height: 1.2028;
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  /* align-items: center; */
 }
 
 #date, #prov-dropdown, #region-dropdown {
@@ -82,7 +82,7 @@ body {
   white-space: nowrap;
 }
 
-.search-output:focus:hover {
+.search-output:focus, .search-output:hover {
   outline: none;
 }
 
