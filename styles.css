@@ -54,22 +54,23 @@ body {
   text-align: center;
   font-weight: 700;
   font-size: 3rem;
-  background-color: orangered;
+  background-color: red;
   padding: 1rem;
   margin-top: 0;
   border: var(--border);
 }
 
 #date {
-  width: auto;
-  height: 1.4rem;
-  display: flex;
-  align-items: center;
+  /* width: auto; */
+  line-height: 1.2028;
+  /* display: flex; */
+  /* align-items: center; */
 }
 
-#prov-dropdown, #region-dropdown {
-  font-size: 1.2rem;
+#date, #prov-dropdown, #region-dropdown {
+  font-size: 1.3rem;
   max-width: 98vw;
+  padding: 8px 24px;
 }
 
 .search-output {
@@ -81,7 +82,7 @@ body {
   white-space: nowrap;
 }
 
-.search-output:focus:hover {
+.search-output:focus, .search-output:hover {
   outline: none;
 }
 
