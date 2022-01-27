@@ -61,16 +61,16 @@ body {
 }
 
 #date {
-  /* width: auto; */
-  line-height: 1.2028;
+  width: auto;
+  height: 1.4rem;
   /* display: flex; */
   /* align-items: center; */
 }
 
 #date, #prov-dropdown, #region-dropdown {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   max-width: 98vw;
-  padding: 8px 24px;
+  padding: 8px 1rem;
 }
 
 .search-output {
