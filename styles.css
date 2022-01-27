@@ -63,20 +63,23 @@ body {
 #date {
   width: auto;
   height: 1.4rem;
-  /* padding: 8px 1rem; */
+  padding-bottom: .5rem;
   display: flex;
   align-items: center;
+  /* margin: 5px auto; */
 }
 
-#prov-dropdown, #region-dropdown {
+/* #prov-dropdown, #region-dropdown {
   font-size: 1.2rem;
   max-width: 98vw;
-  /* padding: 8px 1rem; */
-}
+  padding: 5px .5rem;
+} */
 
-.search-output {
+.search-output.dropdown {  
+  font-size: 1.2rem;
+  max-width: 98vw;
+  padding: 5px .5rem;
   margin: 0 0 1rem 0;
-  padding: 5px;
   display: block;
   border: var(--border);
   background-color: beige;
@@ -90,6 +93,7 @@ body {
 #search-container, #deaths-container {
   display: flex;
   justify-content: space-between;
+  /* align-items: center; */
 }
 
 .death-label {
