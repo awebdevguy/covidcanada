@@ -66,14 +66,7 @@ body {
   padding-bottom: .5rem;
   display: flex;
   align-items: center;
-  /* margin: 5px auto; */
 }
-
-/* #prov-dropdown, #region-dropdown {
-  font-size: 1.2rem;
-  max-width: 98vw;
-  padding: 5px .5rem;
-} */
 
 .search-output.dropdown {  
   font-size: 1.2rem;
@@ -81,7 +74,6 @@ body {
   padding: 5px .5rem;
   margin: 0 0 1rem 0;
   display: block;
-  /* border: var(--border); */
   background-color: beige;
   white-space: nowrap;
 }
@@ -93,7 +85,6 @@ body {
 #search-container, #deaths-container {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
 }
 
 .death-label {
@@ -121,8 +112,8 @@ body {
   padding: var(--padding);
   grid-template-areas: 
     'case-group'
-    'vaccine-group'
-    'recovered-group';
+    'hospital-group'
+    'test-group';
   background-color: black;
 }
 
@@ -133,9 +124,9 @@ body {
 
 #case-group {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas:
-   'new-cases-container active-cases-container total-cases-container';
+   'new-cases-container total-cases-container';
   grid-area: case-group;
 }
 
@@ -151,44 +142,44 @@ body {
   grid-area: total-cases-container;
 }
 
-#vaccine-group {
+#hospital-group {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-  'new-vaccine-container completed-vaccine-container' 'administered-container distributed-container';
-  grid-area: vaccine-group;
+  'new-hospital-container total-hospital-container' 'new-icu-container total-icu-container';
+  grid-area: hospital-group;
 }
 
-#new-vaccine-container {
-  grid-area: new-vaccine-container;
+#new-hospital-container {
+  grid-area: new-hospital-container;
 }
 
-#completed-vaccine-container {
-  grid-area: completed-vaccine-container;
+#total-hospital-container {
+  grid-area: total-hospital-container;
 }
 
-#administered-container {
-  grid-area: administered-container;
+#new-icu-container {
+  grid-area: new-icu-container;
 }
 
-#distributed-container {
-  grid-area: distributed-container;
+#total-icu-container {
+  grid-area: total-icu-container;
 }
 
-#recovered-group {
+#test-group {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-  'new-recovered-container total-recovered-container';
-  grid-area: recovered-group;
+  'new-test-container total-test-container';
+  grid-area: test-group;
 }
 
-#new-recovered-container {
-  grid-area: new-recovered-container;
+#new-test-container {
+  grid-area: new-test-container;
 }
 
-#total-recovered-container {
-  grid-area: total-recovered-container;
+#total-test-container {
+  grid-area: total-test-container;
 }
 
 .data-label-container {
@@ -268,7 +259,7 @@ mark.green {
     grid-template-rows: max-content;
   }
 
-  .supp-group, #case-group, #vaccine-group, #recovered-group {
+  .supp-group, #case-group, #hospital-group, #test-group {
     display: block;
     grid-template-columns: 1fr;
     grid-template-rows: max-content;
