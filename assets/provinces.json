@@ -1,0 +1,93 @@
+[
+  {
+    "region": "AB",
+    "pruid": 48,
+    "name_canonical": "Alberta",
+    "name_canonical_fr": "Alberta",
+    "name_ccodwg": "Alberta"
+  },
+  {
+    "region": "BC",
+    "pruid": 59,
+    "name_canonical": "British Columbia",
+    "name_canonical_fr": "Colombie-Britannique",
+    "name_ccodwg": "BC"
+  },
+  {
+    "region": "MB",
+    "pruid": 46,
+    "name_canonical": "Manitoba",
+    "name_canonical_fr": "Manitoba",
+    "name_ccodwg": "Manitoba"
+  },
+  {
+    "region": "NB",
+    "pruid": 13,
+    "name_canonical": "New Brunswick",
+    "name_canonical_fr": "Nouveau-Brunswick",
+    "name_ccodwg": "New Brunswick"
+  },
+  {
+    "region": "NL",
+    "pruid": 10,
+    "name_canonical": "Newfoundland and Labrador",
+    "name_canonical_fr": "Terre-Neuve-et-Labrador",
+    "name_ccodwg": "NL"
+  },
+  {
+    "region": "NS",
+    "pruid": 12,
+    "name_canonical": "Nova Scotia",
+    "name_canonical_fr": "Nouvelle-Écosse",
+    "name_ccodwg": "Nova Scotia"
+  },
+  {
+    "region": "NT",
+    "pruid": 61,
+    "name_canonical": "Northwest Territories",
+    "name_canonical_fr": "Territoires du Nord-Ouest",
+    "name_ccodwg": "NWT"
+  },
+  {
+    "region": "NU",
+    "pruid": 62,
+    "name_canonical": "Nunavut",
+    "name_canonical_fr": "Nunavut",
+    "name_ccodwg": "Nunavut"
+  },
+  {
+    "region": "ON",
+    "pruid": 35,
+    "name_canonical": "Ontario",
+    "name_canonical_fr": "Ontario",
+    "name_ccodwg": "Ontario"
+  },
+  {
+    "region": "PE",
+    "pruid": 11,
+    "name_canonical": "Prince Edward Island",
+    "name_canonical_fr": "Île-du-Prince-Édouard",
+    "name_ccodwg": "PEI"
+  },
+  {
+    "region": "QC",
+    "pruid": 24,
+    "name_canonical": "Quebec",
+    "name_canonical_fr": "Québec",
+    "name_ccodwg": "Quebec"
+  },
+  {
+    "region": "SK",
+    "pruid": 47,
+    "name_canonical": "Saskatchewan",
+    "name_canonical_fr": "Saskatchewan",
+    "name_ccodwg": "Saskatchewan"
+  },
+  {
+    "region": "YT",
+    "pruid": 60,
+    "name_canonical": "Yukon",
+    "name_canonical_fr": "Yukon",
+    "name_ccodwg": "Yukon"
+  }
+]
